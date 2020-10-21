@@ -8,17 +8,19 @@ p{
 /* Formatação de imagens com legendas */
 figure.foto-legenda{
     position: relative;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 1px  rgb(61, 61, 61);
+    border: 3px solid white;
+    box-shadow: 1px 1px  4px  rgb(0, 0, 0);
     width: 600px;
-    height:338px;
+    height: 338px;
+    
+    
     
     
 
 }
 figure.foto-legenda img{
-    width: 600px;
-    height: 338px;
+    width: 100%;
+    height: 100%;
     
 
 }
@@ -31,11 +33,35 @@ figure.foto-legenda figcaption{
     width: 100%;
     height:100%;
     padding: 10px;
-    box-sizing: border-box;
     margin: auto;
     transition: 200ms;
     opacity: 0;
+    box-sizing: border-box;
+
 }
 figure.foto-legenda:hover figcaption{
     opacity: 1;
+} 
+
+/* formatação Menu */
+nav#menu{
+    display: block;
+}
+nav#menu h1{
+    display:none;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top:-20px;
+   left: 340px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #c5c2c2;
+    padding: 10px;
+    margin: 2px   
+    
 }
